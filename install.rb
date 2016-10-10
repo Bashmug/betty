@@ -25,7 +25,7 @@ else
   File.write(f = 'lib/config.rb', File.read(f).gsub("NAME = \"betty\"", "NAME = \"" + @ALIAS + "\""))
 end
 
-puts "We will install to ~/" + @ALIAS + "and put an alias in your .<shell>rc. Hit <enter> or 'y' if this is okay."
+puts "We will install to ~/" + @ALIAS + " and put an alias in your .<shell>rc. Hit <enter> or 'y' if this is okay."
 STDOUT.flush
 CONTINUE = ask "> "
 if CONTINUE == "" || CONTINUE == "y"
