@@ -25,14 +25,14 @@ Set Up
 
 Manually:
 
-1. First, git clone this repo with `git clone https://github.com/pickhardt/betty`
+1. First, git clone this repo with `git clone https://github.com/Bashmug/betty`
 2. Add the following alias to your ~/.bashrc
 ```alias betty="~/path/to/betty/main.rb"```
 3. Use it! For instance, you can run commands: "betty how many words are in this directory" or "betty uncompress something.tar.gz"
 
 Automatically:
 
-1. First, git clone this repo with `git clone https://github.com/pickhardt/betty`
+1. First, git clone this repo with `git clone https://github.com/Bashmug/betty
 2. Run `ruby install.rb` in `betty/`.
 3. Use it! For instance, you can run commands: `betty how many words are in this directory` or `betty uncompress something.tar.gz`
 
@@ -168,7 +168,7 @@ Please make sure that the tests pass and try to write tests for your contributio
 Maintainers Wanted
 ------------------
 
-While I do not have the time to actively maintain Betty anymore, it is a cool concept and I'm open to someone else taking the lead. If you would like to become a maintainer, contact me at pickhardt (at) gmail (dot) com.
+While I do not have the time to actively maintain Betty anymore, it is a cool concept and I'm open to someone else taking the lead. If you would like to become a maintainer, contact me at xeon (dot) harsh (at) gmail (dot) com.
 
 
 Versioning
