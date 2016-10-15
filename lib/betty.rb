@@ -43,7 +43,7 @@ module Betty
       words
     else
       words.each_slice(column_count).map do |words_in_row|
-        words_in_row.map { |word| word.ljust(column_size) }.join(' ')
+        words_in_row.map { |word| word.ljust(column_size) }.join
       end
     end
 
