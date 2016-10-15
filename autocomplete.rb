@@ -5,7 +5,7 @@
 
 if ARGV.length==0
   puts "Betty: Autocomplete installed."
-  exit 
+  exit
 end
 
 words = ARGV[1..-1].reverse.join(" ")
