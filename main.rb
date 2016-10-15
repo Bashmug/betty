@@ -81,7 +81,9 @@ def help(command)
       #puts "I do know how to\n" + responses.map{|x| x[:category] + ":\t\t" + x[:usage].sample }.join("\n")
     end
   else
-    say "What can I help you with?"
+    say "What can I help you with?\n\n" \
+        "You can ask me for all kinds of favours. For example by asking:\n" \
+        "Betty what can you do for me?"
   end
 end
 
