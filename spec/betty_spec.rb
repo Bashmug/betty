@@ -17,7 +17,9 @@ describe Betty do
     end
 
     it 'lists all the executor categories' do
-      expect(what_betty_said).to include "Apples\nBananas\nCherries"
+      expect(what_betty_said).to include 'Apples'
+      expect(what_betty_said).to include 'Bananas'
+      expect(what_betty_said).to include 'Cherries'
     end
   end
 end
