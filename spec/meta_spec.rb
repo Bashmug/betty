@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Betty do
+describe Meta do
   context 'what can you do for me' do
     let(:executors) do
       [
@@ -13,7 +13,7 @@ describe Betty do
     let(:what_betty_said) { subject.first[:say]}
 
     before do
-      expect(Betty).to receive(:executors).and_return(executors)
+      expect(Meta).to receive(:executors).and_return(executors)
     end
 
     it 'lists all the executor categories' do
