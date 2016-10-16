@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 require 'logger'
 
-$URL = 'https://github.com/pickhardt/betty'
+$URL = 'https://github.com/Bashmug/betty'
 $VERSION = '0.1.7'
 $executors = []
 $LOG = Logger.new(File.open(ENV['HOME'] + '/.betty_history', 'a+'))
