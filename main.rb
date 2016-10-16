@@ -199,8 +199,8 @@ def web_query(command)
       https.request(req)
     }
     answer=res.body
-    return "web api error" if answer.match /^</
-    return answer if not answer.match /^\{/ # no json, just text
+    return "web api error" if answer.match(/^</)
+    return answer if not answer.match(/^\{/) # no json, just text
     json=JSON.parse answer
     actions=json['output'][0]['actions']
     url=actions['open']['url'] rescue nil
