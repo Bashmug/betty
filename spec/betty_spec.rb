@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe Betty do
-  context 'what can you do for me?' do
+  context 'what can you do for me' do
     let(:executors) do
       [
         double(help: [{category: 'Apples'}]),
