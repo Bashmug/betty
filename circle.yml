@@ -1,6 +1,3 @@
-dependencies:
-  pre:
-    - bundle install
 test:
-  override:
-    - bundle exec rspec spec
+  post:
+    - bundle exec rubocop
