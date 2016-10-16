@@ -83,7 +83,7 @@ def help(command)
   else
     say "What can I help you with?\n\n" \
         "You can ask me for all kinds of favours. For example by asking:\n" \
-        "Betty what can you do for me?"
+        "Betty what can you do for me"
   end
 end
 

@@ -2,7 +2,7 @@ require 'io/console'
 
 module Betty
   def self.interpret(command)
-    if command.match(/^what can you do for me\?$/)
+    if command.match(/^what can you do for me$/)
       topics = executors.flat_map(&:help)
                         .map {|executor| executor[:category] }
                         .sort
@@ -25,7 +25,7 @@ module Betty
     [{
       category: 'Betty',
       description: '\033[34mTells you some things about me\033[0m',
-      usage: [ 'what can you do for me?' ]
+      usage: [ 'what can you do for me' ]
     }]
   end
 
