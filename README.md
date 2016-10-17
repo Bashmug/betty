@@ -1,5 +1,7 @@
 Betty (version 0.1.8)
 =====================
+
+[![Join the chat at https://gitter.im/BashMug/betty](https://badges.gitter.im/BashMug/betty.svg)](https://gitter.im/BashMug/betty?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 ![circle ci build](https://circleci.com/gh/pickhardt/betty/tree/dev.png)
 
 Betty is a friendly English-like interface for your command line.
