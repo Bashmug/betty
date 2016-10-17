@@ -103,12 +103,23 @@ def run(response)
   if response[:command]
     command=response[:command]
     say "Running #{ command }" if not command.match(/^echo/)
-    res = `#{command}`
+    res = run_command(command)
     puts res
     if BettyConfig.get("speech")
       speak(res)
     end
   end
+end
+
+def run_command(command)
+  begin
+    res = `#{command}`
+  rescue Errno::ENOENT
+    res = "I'm sorry, I don't know any program or file called #{command.split(' ')[0]}"
+  rescue => err
+    res = "I cannot run this command: #{command} \nError: #{err}"
+  end
+  res
 end
 
 def sanitize(text)
