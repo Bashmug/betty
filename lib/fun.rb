@@ -71,6 +71,12 @@ module Fun
       }
     end
 
+    if command.match(/^?tell\s+me\s+a\s+joke/)
+      responses << {
+        :say => "I don't think you would understand a joke in my language."
+      }
+    end
+
     responses
   end
 
