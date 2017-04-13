@@ -1,0 +1,29 @@
+#!/usr/bin/python
+from sys import argv as arguments
+import urban_dictonary.urban_dict as urban_dict
+
+# example betty.py hi
+
+#TODO
+#write down all todo here
+
+
+#for testing comment them when using
+print ('Number of arguments:', len(arguments), 'arguments.')
+print ('Argument List:', (arguments))
+print('\n')
+#for testing ends here
+if len(arguments) <= 2:
+	print('Hi I am Betty Your command line assistant Still Under Development')
+#add help menu above and this should also launch on 0 argvs too 
+
+# making what is
+if len(arguments) >= 4:
+	if (arguments[1] == 'what' or arguments[1] == 'What') and arguments[2] == 'is' :
+		rest_of_len = len(arguments) - 3 # 1 = betty , 2 = what , 3 = is
+#why do i prefer tabs or spaces am i bad ? check google
+		word = [] 
+		for i in range(rest_of_len):
+			word.append(arguments[3+i])
+		urban_dict.urban_dict(' '.join(word)) # like betty.py what is fake news
+		# urban_dictonary contains 4500 words in cvs file so so so 
