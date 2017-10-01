@@ -16,6 +16,10 @@ print('\n')
 #for testing ends here
 if len(arguments) <= 2:
 	print('Hi I am Betty Your command line assistant Still Under Development\n')
+	print('''Usage:\nbetty 
+	<commands [args]>
+	\nCommands:
+	\nWhat is [args]: search for definition of args in dictionary''')
 #add help menu above and this should also launch on 0 argvs too 
 
 # making what is
