@@ -1,5 +1,4 @@
 #!/usr/bin/python
-#-*- coding: utf-8 -*-
 from sys import argv as arguments
 import urban_dictonary.urban_dict as urban_dict
 
