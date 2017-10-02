@@ -9,6 +9,10 @@ __pycache__/
 # PYC files
 *.pyc
 
+#Eclipse Project Files
+.project
+.pydevproject
+
 # Distribution / packaging
 .Python
 env/
