@@ -7,7 +7,7 @@ __pycache__/
 *.so
 
 # PYC files
-urban_dictionary/*.pyc
+urban_dictionary/__pycache__/*.pyc
 
 #Eclipse Project Files
 .project
