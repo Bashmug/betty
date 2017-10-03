@@ -1,7 +1,7 @@
 #!/usr/bin/python
 #-*- coding: utf-8 -*-
 from sys import argv as arguments
-import urban_dictonary.urban_dict as urban_dict
+from urban_dictonary.urban_dict import *
 
 # example betty.py hi
 
@@ -30,5 +30,9 @@ if len(arguments) >= 4:
 		word = [] 
 		for i in range(rest_of_len):
 			word.append(arguments[3+i])
-		urban_dict.urban_dict(' '.join(word)) # like betty.py what is fake news
+		urban_dict(' '.join(word)) # like betty.py what is fake news
 		# urban_dictonary contains 4500 words in csv file so so so 
+	if (arguments[1] == 'entries' or arguments[1] == 'Entries') and arguments[2] == 'with':
+		print(arguments[3])
+		entries_with(arguments[3])
+		
