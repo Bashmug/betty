@@ -9,6 +9,9 @@ __pycache__/
 # PYC files
 *.pyc
 
+#eclipse settings
+.settings/*
+
 #Eclipse Project Files
 .project
 .pydevproject
