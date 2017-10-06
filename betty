@@ -1,6 +1,7 @@
 #!/usr/bin/python
+#-*- coding: utf-8 -*-
 from sys import argv as arguments
-import urban_dictonary.urban_dict as urban_dict
+import urban_dictonary.urban_dict as ud
 
 # example betty.py hi
 
@@ -10,7 +11,7 @@ import urban_dictonary.urban_dict as urban_dict
 
 #for testing comment them when using
 print ('Number of arguments:', len(arguments), 'arguments.')
-print ('Argument List:', (arguments))
+#print ('Argument List:', (arguments))
 print('\n')
 #for testing ends here
 if len(arguments) <= 2:
@@ -33,6 +34,9 @@ if len(arguments) >= 4:
 #why do i prefer tabs or spaces am i bad ? check google
 		word = [] 
 		for i in range(rest_of_len):
-			word.append(arguments[3+i])
-		urban_dict.urban_dict(' '.join(word)) # like betty.py what is fake news
+		  word.append(arguments[3+i])
+		ud.urban_dict(' '.join(word)) # like betty.py what is fake news
 		# urban_dictonary contains 4500 words in csv file so so so 
+	if (arguments[1] == 'entries' or arguments[1] == 'Entries') and arguments[2] == 'with':
+		print(arguments[3])
+		ud.entries_with(arguments[3])

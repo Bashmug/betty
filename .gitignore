@@ -1,0 +1,16 @@
+# Byte-compiled / optimized / DLL files
+*/__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# PYC files
+*.pyc
+
+#Eclipse Project Files
+.project
+.pydevproject
+.settings/*
+
