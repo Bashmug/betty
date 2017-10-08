@@ -19,9 +19,17 @@ if len(arguments) <= 2:
 	print('''Usage:\nbetty 
 	<commands [args]>
 	\nCommands:
-	\nWhat is [args]: search for definition of args in dictionary''')
+	\nWhat is [args]: search for definition of args in dictionary
+	\nEntries with [args]: search for a word by their respective substring''')
 #add help menu above and this should also launch on 0 argvs too 
 
+if (len(arguments) <= 2 and arguments[1] == 'help'):
+	print('''Usage:\nbetty 
+	<commands [args]>
+	\nCommands:
+	\nWhat is [args]: search for definition of args in dictionary
+	\nEntries with [args]: search for a word by their respective substring''')
+	
 # making what is
 if len(arguments) >= 4:
 	if (arguments[1] == 'what' or arguments[1] == 'What') and arguments[2] == 'is' :
