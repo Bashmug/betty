@@ -9,10 +9,8 @@
 # PYC files
 *.pyc
 
-#eclipse settings
-.settings/*
-
 #Eclipse Project Files
 .project
 .pydevproject
+.settings/*
 
